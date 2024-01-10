@@ -1,0 +1,374 @@
+/* ======================font link start======================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+/* -------------------font link end----------------------- */
+/* ====================common css part start================= */
+
+*{
+    padding: 0%;
+    margin: 0%;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0%;
+    padding: 0%;
+}
+/* ------------------common css part end-------------------- */
+/* ===================veriable part start=================== */
+:root{
+    --open_sans: 'Open Sans', sans-serif;
+    --brand_color:#FFC178;
+}
+/* --------------veriable part end---------------------- */
+/* ==================== menu part start================= */
+.main_menu{
+   position: absolute;
+   width: 100%;
+   padding-top: 28px;
+   background: transparent !important;
+   z-index: 999;
+}
+.main_menu img{
+    width: 87px;
+}
+.main_menu ul{
+    gap: 60px;
+}
+.navbar-collapse {
+    flex-basis: 100%; 
+    flex-grow: unset;
+    justify-content: end;
+    align-items: center;
+}
+.main_menu ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--open_sans);
+    color: #fff !important;
+    position: relative;
+    padding: 0% !important;
+    transition: all linear .4s;
+}
+.main_menu ul li a::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: all linear .3s;
+}
+
+.main_menu ul li a:hover::after{
+    visibility: visible;
+    width: 100%;
+    left: 0%;
+    opacity: 1;
+}
+.main_menu ul li a:hover{
+    color: #000 !important;
+}
+/* ------------------menu part end-------------------- */
+/* ==================== banner part start================= */
+#banner{
+    width: 100%;
+    position: relative;
+    padding-top: 462px;
+    padding-bottom: 462px;
+    background: url(../image/banner_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.banner_heading h2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--open_sans);
+    color: var(--brand_color);
+}
+.banner_heading h1{
+    width: 860px;
+    margin-top: 37px;
+    font-size: 96px;
+    font-weight: 700;
+    font-family: var(--open_sans);
+    color: #fff;
+}
+.banner_heading h1 span{
+    font-size: 88px;
+    font-weight: 400;
+}
+
+/* ------------------banner part end-------------------- */
+/* ==================== holiday part start================= */
+#holiday{
+    padding-top: 326px;
+    padding-bottom: 295px;
+    background: #000000;
+}
+.common_heading{
+    margin-left: 50px;
+}
+.common_heading h2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--open_sans);
+    color: var(--brand_color);
+    margin-top: 38px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+.common_heading h3{
+    width: 496px;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: var(--open_sans);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.common_heading p{
+    width: 587px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--open_sans);
+    color: #fff;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-top: 13px;
+    margin-bottom: 66px;
+}
+.common_heading h4{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--open_sans);
+    color: var(--brand_color);
+    text-transform: uppercase;
+}
+.steps{
+    width: 100%;
+    padding-top: 560px;
+    padding-bottom: 32px;
+    margin-top: 351px;
+    background: url(../image/steps.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0% auto;
+}
+.steps_heading .common_heading{
+    margin-left: 0px;
+}
+.steps_heading .common_heading h3{
+    width: 932px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+    margin: 0% auto;
+}
+.steps_heading .common_heading p{
+    width: 893px;
+    margin-bottom: 26px !important;
+    margin: 0% auto;
+}
+/* ------------------holiday part end-------------------- */
+/* ==================== our_culture part start================= */
+#our_culture{
+    padding-bottom: 199px;
+    background: #000;
+}
+.our_culture_heading{
+    margin-top: 153px;
+}
+.our_culture_heading .common_heading{
+    margin-left: 0px;
+}
+.our_culture_heading .common_heading h2{
+    letter-spacing: 6px;
+}
+.our_culture_heading .common_heading h3{
+    width: 635px;
+margin-top: 19px;
+margin-bottom: 19px;
+}
+.our_culture_heading .common_heading p{
+    width: 635px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 46px;
+}
+.culture_img img{
+    width: 624px;
+}
+
+/* ------------------our_culture part end-------------------- */
+/* ==================== footer part start================= */
+#footer{
+    background: #000;
+    padding-bottom: 30px;
+}
+.footer_img img{
+    width: 173px;
+}
+.footer_heading h2{
+    width: 383px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--open_sans);
+    color: #fff;
+    line-height: 49px;
+    letter-spacing: -0.3px;
+    margin-top: 81px;
+    margin-bottom: 36px;
+}
+.footer_heading p{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--open_sans);
+    color: #fff;
+    letter-spacing: o.2;
+    margin-bottom: 48px;
+}
+.footer_icon{
+    display: flex;
+    gap: 29px;
+}
+.footer_icon a i{
+    font-size: 18px;
+    color: #fff;
+}
+.footer_explore{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 18px;
+}
+.footer_explore h2{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--open_sans);
+    color: #fff;
+}
+.footer_button a{
+    width: 232px;
+    height: 59px;
+    border-radius: 10px;
+    background: var(--brand_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: var(--open_sans);
+    color: #000;
+    transition: all linear .3s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.footer_button a::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 0px;
+    height: 0%;
+    background: #fff;
+    z-index: -1;
+    transform: rotate(12.5deg);
+    transition: all linear .4s;
+}
+.footer_button a:hover::after{
+    top: -59%;
+    right: -5%;
+    width: 300px;
+    height: 100%;
+}
+.footer_button a::before{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 0px;
+    height: 0%;
+    background: #fff;
+    z-index: -1;
+    transform: rotate(12.5deg);
+    transition: all linear .4s;
+}
+.footer_button a:hover::before{
+    bottom: -59%;
+    left: -5%;
+    width: 300px;
+    height: 100%;
+}
+.footer_row{
+    display: flex;
+}
+.footer_row .one{
+    margin-right: 85px;
+}
+.footer_row .two{
+    margin-right: 138px;
+}
+.footer_col h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--open_sans);
+    color: var(--brand_color);
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.footer_col ul li a{
+    font-size: 19px;
+    font-weight: 400;
+    font-family: var(--open_sans);
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.copyright p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--open_sans);
+    color: #ffffff;
+    margin-top: 153px;
+    text-align: center;
+}
+
+
+
+
+/* ------------------footer part end-------------------- */
+/* ==================== menu part start================= */
+
+/* ------------------menu part end-------------------- */
+/* ==================== menu part start================= */
+
+/* ------------------menu part end-------------------- */
+/* ==================== menu part start================= */
+
+/* ------------------menu part end-------------------- */
+/* ==================== menu part start================= */
+
+/* ------------------menu part end-------------------- */
+/* ==================== menu part start================= */
+
+/* ------------------menu part end-------------------- */
+/* ==================== menu part start================= */
+
+/* ------------------menu part end-------------------- */
+/* ==================== menu part start================= */
+
+/* ------------------menu part end-------------------- */
